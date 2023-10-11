@@ -1,6 +1,13 @@
 public class Zad6 {
     public static Double calculateLeasingCost(Double carWorth, Double initialPayment, Integer lengthInMonths) {
-        if (initialPayment > 300_000 || lengthInMonths > 96) return null;
+        if (initialPayment > 300_000 || lengthInMonths > 96) throw new IllegalArgumentException("Initial payment must be less than 300,000 and length in months must be less than 96");
+        if (initialPayment < 0 || lengthInMonths < 0) throw new IllegalArgumentException("Initial payment and length in months must be positive");
+        double interest = getInterest(carWorth, initialPayment, lengthInMonths);
+
+        return (carWorth - initialPayment + interest) / lengthInMonths;
+    }
+
+    private static double getInterest(Double carWorth, Double initialPayment, Integer lengthInMonths) {
         double monthlyPercantage = 0.0;
 
         if (lengthInMonths < 24) {
@@ -15,9 +22,7 @@ public class Zad6 {
             monthlyPercantage = 0.06;
         }
 
-        double interest = (carWorth - initialPayment) * monthlyPercantage;
-
-        return (carWorth - initialPayment + interest) / lengthInMonths;
+        return (carWorth - initialPayment) * monthlyPercantage;
     }
 
     public static void main(String[] args) {
