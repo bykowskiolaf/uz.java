@@ -9,6 +9,7 @@ public class Zad2_5 {
         int scannedNumber = scanner.nextInt();
         int power = 0;
 
+        // this loop will run until 3^power is greater than scannedNumber
         while (Math.pow(3, power) < scannedNumber) {
             System.out.println(Math.pow(3, power));
             power++;

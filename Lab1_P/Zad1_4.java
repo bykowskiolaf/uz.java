@@ -1,6 +1,8 @@
+//Wczytaj kilka (x) liczb i wyznacz wartości min, max, średnią, oraz ilość podanych
+//liczb.
+
 import java.util.Arrays;
 import java.util.Scanner;
-
 
 public class Zad1_4 {
 
@@ -10,8 +12,8 @@ public class Zad1_4 {
         System.out.println("Podaj liczby oddzielone spacja: ");
         String scannedString = scanner.nextLine().replaceAll("\\s+", " ");
 
-//        List<String> scannedList = new ArrayList<>();
-
+        // this code is a bit more complicated than it should be, but it's a good exercise
+        // it takes the input string, trims it, splits it by spaces, maps it to Integer, and then converts it to an array
         Integer[] scannedArray = Arrays.stream(
                         scannedString
                             .trim()
@@ -19,6 +21,7 @@ public class Zad1_4 {
                             .map(Integer::parseInt)
                             .toArray(Integer[]::new);
 
+        // then we print out all the values as requested in the task
         System.out.print("Minimum: ");
         System.out.println(Arrays.stream(scannedArray).min(Integer::compare).get());
         System.out.print("Maksimum: ");

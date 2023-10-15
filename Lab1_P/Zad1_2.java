@@ -1,7 +1,11 @@
+//Wyznacz równanie kwadratowe z podanych przez użytkownika wartości
+//parametrów a, b i c.
+
 import java.util.Arrays;
 
 public class Zad1_2 {
 
+    //this is the primary method of this class, it calculates the quadratic function and returns the answers as an array
     public static double[] CalculateQuadraticFunc(double a, double b, double c) throws Exception {
         double delta = (b * b) - (4 * (a * c));
         if (delta < 0) throw new Exception("Delta < 0");

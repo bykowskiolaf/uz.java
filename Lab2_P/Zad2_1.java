@@ -16,6 +16,7 @@ public class Zad2_1 {
         return sum / arr.length;
     }
 
+    // this method is not efficient, but it's the easiest to implement
     private static boolean isPrime(int n) {
         if (n < 2) return false;
         if (n == 2) return true;
@@ -27,10 +28,12 @@ public class Zad2_1 {
         return true;
     }
 
+    // this method finds the ratio between average of odd and even numbers
     private static double findRatio(Integer[] arr) {
         ArrayList<Integer> odd = new ArrayList<>();
         ArrayList<Integer> even = new ArrayList<>();
 
+        // this loop adds odd numbers to odd array and even numbers to even array
         for (int i : arr) {
             if (i % 2 == 0) {
                 even.add(i);
@@ -39,19 +42,23 @@ public class Zad2_1 {
             }
         }
 
+        // the method then returns the ratio between average of odd and even numbers
         return average(odd.stream().mapToInt(Integer::intValue).toArray()) /
                 average(even.stream().mapToInt(Integer::intValue).toArray()
-        );
+                );
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+        // this code splits the input string into an array of integers
         Integer[] scannedArray = Arrays.stream(scanner
-                        .nextLine()
-                        .split(""))
+                .nextLine()
+                .split(""))
                 .map(Integer::parseInt)
                 .toArray(Integer[]::new);
 
+        // then it prints out the results
         System.out.println("Ratio: " + findRatio(scannedArray));
         System.out.println("Is prime: " + isPrime(scannedArray.length));
     }

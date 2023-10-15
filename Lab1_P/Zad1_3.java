@@ -1,3 +1,5 @@
+//Opracuj kod służący do konwersji prędkości samochodu z mil na km/h.
+
 public class Zad1_3 {
 
     public static double ConvertMphToKmh(int mph) {

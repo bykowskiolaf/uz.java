@@ -13,6 +13,7 @@ public class Zad2_3 {
         int randomNumber = (int) (Math.random() * 200 + 1);
         int userNumber = 0;
 
+        // this loop will run until userNumber is equal to randomNumber
         while (userNumber != randomNumber) {
             System.out.println("Podaj liczbe: ");
             userNumber = scanner.nextInt();
