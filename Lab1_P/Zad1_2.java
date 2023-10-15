@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Zad2 {
+public class Zad1_2 {
 
     public static double[] CalculateQuadraticFunc(double a, double b, double c) throws Exception {
         double delta = (b * b) - (4 * (a * c));

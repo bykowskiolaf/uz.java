@@ -1,4 +1,4 @@
-public class Zad6 {
+public class Zad1_6 {
     public static Double calculateLeasingCost(Double carWorth, Double initialPayment, Integer lengthInMonths) {
         if (initialPayment > 300_000 || lengthInMonths > 96) throw new IllegalArgumentException("Initial payment must be less than 300,000 and length in months must be less than 96");
         if (initialPayment < 0 || lengthInMonths < 0) throw new IllegalArgumentException("Initial payment and length in months must be positive");

@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Zad5 {
+public class Zad1_5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("podaj dzialanie matematyczne bez nawiasow: ");

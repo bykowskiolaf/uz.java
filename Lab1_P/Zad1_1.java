@@ -1,4 +1,4 @@
-public class Zad1 {
+public class Zad1_1 {
     public static void main(String[] args) {
         int SIZE = 10;
 
