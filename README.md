@@ -41,8 +41,8 @@ This repository is organized as follows:
 | |-- W1_2
 | |-- ...
 |-- Lab1_P/
-| |-- Zad1_1
-| |-- Zad1_2
+| |-- Zad1
+| |-- Zad2
 | |-- ...
 |-- Materialy/
 | |-- ksiazki/

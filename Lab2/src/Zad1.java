@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Zad1_1 {
+public class Zad1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int SIZE = scanner.nextInt();
