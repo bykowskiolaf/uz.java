@@ -40,10 +40,11 @@ This repository is organized as follows:
 | |-- W1_1
 | |-- W1_2
 | |-- ...
-|-- Lab1_P/
-| |-- Zad1
-| |-- Zad2
-| |-- ...
+|-- Lab1/
+| |-- src/
+| | |-- Samochod
+| | |-- Zad2
+| | |-- ...
 |-- Materialy/
 | |-- ksiazki/
 | |-- strony/
@@ -53,7 +54,7 @@ This repository is organized as follows:
 ```
 
 - `Wyklad/`: Contains lecture notes, slides, and code samples.
-- `LabX_P/`: Includes various assignments for practice.
+- `LabX/`: Includes various assignments for practice.
 - `Materialy/`: Provides additional resources, such as recommended books and websites for further learning.
 
 Each lecture and lab folder contains relevant materials and instructions. You can clone this repository to your local machine and stay updated with the latest course materials.
