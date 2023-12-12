@@ -1,8 +1,10 @@
 package Components;
 
 import lombok.Data;
+import lombok.ToString;
 
 @Data
+@ToString
 public class Drum {
 
     private int maxCapacity;
