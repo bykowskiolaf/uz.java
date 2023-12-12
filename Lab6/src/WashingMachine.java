@@ -80,6 +80,7 @@ public class WashingMachine {
         this.waterPump.setFlow(this.currentMode.maxFlow);
         this.motor.setRpm(this.currentMode.maxRpm);
         this.heatingElement.setTemperature(this.currentMode.maxTemp);
+        this.status = Status.WASHING;
         this.detergentContainer.empty();
 
         try {
@@ -88,6 +89,7 @@ public class WashingMachine {
             e.printStackTrace();
         }
 
+        this.status = Status.IDLE;
         this.waterPump.setFlow(0);
         this.motor.setRpm(0);
         this.heatingElement.setTemperature(0);
