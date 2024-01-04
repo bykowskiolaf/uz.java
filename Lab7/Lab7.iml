@@ -8,5 +8,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.30" level="project" />
+    <orderEntry type="library" name="Maven: com.opencsv:opencsv:5.3" level="project" />
+    <orderEntry type="library" name="Maven: com.opencsv:opencsv:5.9" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.14.0" level="project" />
   </component>
 </module>
