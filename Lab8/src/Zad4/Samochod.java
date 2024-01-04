@@ -1,4 +1,4 @@
-//1. Stwórz klasę o nazwie Samochod reprezentującą dane pojazdu zawierającą następujące pola:
+package Zad4;//1. Stwórz klasę o nazwie Samochod reprezentującą dane pojazdu zawierającą następujące pola:
 //marka,
 //model,
 //pojemność silnika,
@@ -18,7 +18,6 @@
 import lombok.ToString;
 
 import java.time.LocalDate;
-
 @ToString
 public class Samochod {
     String brand;
@@ -52,7 +51,7 @@ public class Samochod {
         this.price = price;
     }
 
-
+    
     public enum bodyType {
         SEDAN, KOMBI, HATCHBACK, CABRIO, SUV, PICKUP, VAN
     }

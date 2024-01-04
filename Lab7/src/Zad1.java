@@ -1,27 +1,37 @@
 import lombok.Builder;
 
 public class Zad1 {
-
     public static class Calculator {
-        Double result;
+        Double[] numbers;
 
         public Calculator(Double a) {
-            result = a;
+            numbers = new Double[]{a};
         }
 
         public Calculator(Double a, Double b, Double c, Double d) {
-            result = a + b + c + d;
+            numbers = new Double[]{a, b, c, d};
         }
 
         public Calculator(Double a, Double b, Double c, Double d, Double e, Double f, Double g) {
-            result = a + b + c + d + e + f + g;
+            numbers = new Double[]{a, b, c, d, e, f, g};
         }
 
         @Builder
         public Calculator(Double a, Double b, Double c, Double d, Double e, Double f, Double g, Double h) {
-            result = a + b + c + d + e + f + g + h;
+            numbers = new Double[]{a, b, c, d, e, f, g, h};
         }
 
+        public Calculator(Calculator otherCalculator) {
+            this.numbers = otherCalculator.numbers.clone();
+        }
+
+        public double calculateSum() {
+            double sum = 0;
+            for (double number : numbers) {
+                sum += number;
+            }
+            return sum;
+        }
     }
 
     public static void main(String[] args) {
@@ -36,8 +46,6 @@ public class Zad1 {
                 .build();
 
         Calculator asd = new Calculator(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0);
-
-        System.out.println(calculator.result);
+        System.out.println(calculator.calculateSum());
     }
-
 }
