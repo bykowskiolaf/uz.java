@@ -2,6 +2,7 @@ import Components.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import org.jetbrains.annotations.NotNull;
 import statuses.Mode;
 import statuses.Status;
 
@@ -27,7 +28,7 @@ public class WashingMachine {
         this.detergentContainer = new DetergentContainer(maxDetergentCapacity);
     }
 
-    private void handleModeChange(Mode newMode) {
+    private void handleModeChange(@NotNull Mode newMode) {
         this.waterPump.setModeFlow(newMode.maxFlow);
         this.motor.setModeRpm(newMode.maxRpm);
         this.heatingElement.setModeTemperature(newMode.maxTemp);

@@ -1,24 +1,7 @@
-//1. Stwórz klasę o nazwie Samochod reprezentującą dane pojazdu zawierającą następujące pola:
-//marka,
-//model,
-//pojemność silnika,
-//typ nadwozia,
-//typ silnika,
-//rok produkcji,
-//data 1 rejestracji,
-//cena.
-//
-//Klasa powinna zawierać osobne metody służące do ustawiania i zwracania wartości
-//poszczególnych pól obiektów.
-
-//Napisz metodę, która sprawdzi, czy samochód posiada jeszcze gwarancję (wiek
-//pojazdu do 2 lat licząc od daty rejestracji) i zwróci informację w formie komunikatu
-//tekstowego.
-
+package Zad4;
 import lombok.ToString;
 
 import java.time.LocalDate;
-
 @ToString
 public class Samochod {
     String brand;
@@ -52,7 +35,7 @@ public class Samochod {
         this.price = price;
     }
 
-
+    
     public enum bodyType {
         SEDAN, KOMBI, HATCHBACK, CABRIO, SUV, PICKUP, VAN
     }
