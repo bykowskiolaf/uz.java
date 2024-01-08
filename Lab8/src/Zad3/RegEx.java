@@ -1,4 +1,5 @@
-package Zad3;// Z podanego zdania należy wyodrębnić zawarte w nim słowa stosując wyrażenie
+package Zad3;
+// Z podanego zdania należy wyodrębnić zawarte w nim słowa stosując wyrażenie
 // regularne
 
 import java.util.regex.Matcher;
@@ -13,9 +14,9 @@ public class RegEx {
         Matcher matcher = pattern.matcher(email);
 
         if (matcher.matches()) {
-            System.out.println(email + " jest prawidłowym adresem e-mail.");
+            System.out.println(STR."\{email} jest prawidłowym adresem e-mail.");
         } else {
-            System.out.println(email + " nie jest prawidłowym adresem e-mail.");
+            System.out.println(STR."\{email} nie jest prawidłowym adresem e-mail.");
         }
     }
 }

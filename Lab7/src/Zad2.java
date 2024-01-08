@@ -61,22 +61,26 @@ public class Zad2 {
         }
     }
 
+    // only write comments in this file
     public static void main(String[] args) {
         final String CSV_FILE_NAME = "test.csv";
         final String TXT_FILE_NAME = "test.txt";
         Zad2 zad2 = new Zad2();
 
+        // Writing to a CSV file
         List<String[]> dataLines = new ArrayList<>();
         dataLines.add(new String[]{"John", "Doe", "38", "Comment", "Another comment"});
         dataLines.add(new String[]{"Jane", "Doe, Jr.", "19", "She said 'Im being quoted'"});
 
         File csvOutputFile = new File(CSV_FILE_NAME);
         try (PrintWriter pw = new PrintWriter(csvOutputFile)) {
+            // mapping data to CSV format using the method defined above
             dataLines.stream().map(zad2::convertToCSV).forEach(pw::println);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
 
+        // Reading from a CSV file
         List<String[]> dataLines2 = zad2.readCSV(CSV_FILE_NAME);
         dataLines2.forEach(x -> System.out.println(String.join(",", x)));
 

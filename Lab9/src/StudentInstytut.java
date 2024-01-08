@@ -1,3 +1,4 @@
+// a class that extends StudentUZ and adds a field instytut
 public class StudentInstytut extends StudentUZ {
     private String instytut;
 

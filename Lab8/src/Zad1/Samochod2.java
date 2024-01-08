@@ -1,4 +1,5 @@
-package Zad1;//Należy zmodyfikować wcześniej napisany program z listy 5 w taki sposób aby
+package Zad1;
+//Należy zmodyfikować wcześniej napisany program z listy 5 w taki sposób aby
 //wszystkie pola klasy Samochód były dostępne maksymalnie z poziomu pakietu.
 //Dodatkowo dodać zmienną Lp. która będzie dostępna tylko w klasie AutoKomis.
 

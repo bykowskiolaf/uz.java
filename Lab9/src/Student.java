@@ -1,3 +1,5 @@
+
+// an abstract class for a student with a name, surname and index number
 public abstract class Student {
     private String imie;
     private String nazwisko;
